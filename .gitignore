@@ -15,8 +15,7 @@ build/
 data/creditcard.csv
 
 # Trained models
-ml/models/*.joblib
-ml/models/*.pkl
+
 
 # Generated figures
 ml/figures/*.png
