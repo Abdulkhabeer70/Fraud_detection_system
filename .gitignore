@@ -12,7 +12,7 @@ dist/
 build/
 
 # Data files (too large for Git)
-data/creditcard.csv
+
 
 # Trained models
 
