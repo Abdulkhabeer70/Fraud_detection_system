@@ -1,0 +1,32 @@
+{
+  "logistic_regression": {
+    "model_name": "logistic_regression",
+    "train_time_seconds": 0.03,
+    "test_f1_score": 0.9697,
+    "test_roc_auc": 0.9996,
+    "test_avg_precision": 0.9847,
+    "cv_f1_mean": 0.9995,
+    "cv_f1_std": 0.0006,
+    "model_path": "D:\\data_mining_project\\ml\\models\\logistic_regression.joblib"
+  },
+  "random_forest": {
+    "model_name": "random_forest",
+    "train_time_seconds": 1.42,
+    "test_f1_score": 0.9375,
+    "test_roc_auc": 0.9998,
+    "test_avg_precision": 0.9873,
+    "cv_f1_mean": 1.0,
+    "cv_f1_std": 0.0,
+    "model_path": "D:\\data_mining_project\\ml\\models\\random_forest.joblib"
+  },
+  "xgboost": {
+    "model_name": "xgboost",
+    "train_time_seconds": 0.73,
+    "test_f1_score": 0.7692,
+    "test_roc_auc": 0.9986,
+    "test_avg_precision": 0.9376,
+    "cv_f1_mean": 0.9972,
+    "cv_f1_std": 0.0023,
+    "model_path": "D:\\data_mining_project\\ml\\models\\xgboost.joblib"
+  }
+}

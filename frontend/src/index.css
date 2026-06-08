@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   FRAUDGUARD AI — Professional Light Theme
+   Dark Sidebar + Clean White Content Area
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── Reset ─────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Root Palette ───────────────────────────
+   --bg-page      : page content background
+   --bg-sidebar   : sidebar background
+   --surface      : card surface
+   --border       : card / table borders
+   --text-primary : main readable text
+   --text-secondary: muted helper text
+   --text-label   : caps label text
+   --accent       : brand blue-indigo
+   --accent-fg    : text on accent button
+*/
+:root {
+  --bg-page: #f0f2f5;
+  --bg-sidebar: #1a1f2e;
+  --surface: #ffffff;
+  --border: #e2e6ee;
+  --text-primary: #0f1422;
+  --text-secondary: #5a6275;
+  --text-label: #8792a8;
+  --accent: #4f6ef7;
+  --accent-light: #eef1ff;
+  --accent-fg: #ffffff;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ── Scrollbar ──────────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-page); }
+::-webkit-scrollbar-thumb { background: #c8cfe0; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #a0aabb; }
+
+/* ── Components ─────────────────────────── */
+@layer components {
+
+  /* ── Cards ── */
+  .glass-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(15, 20, 40, 0.06), 0 4px 16px rgba(15, 20, 40, 0.04);
+  }
+
+  .glass-card-hover {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 1px 4px rgba(15, 20, 40, 0.06), 0 4px 16px rgba(15, 20, 40, 0.04);
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+  }
+  .glass-card-hover:hover {
+    box-shadow: 0 4px 12px rgba(79, 110, 247, 0.08), 0 12px 32px rgba(15, 20, 40, 0.10);
+    border-color: #c5cef8;
+    transform: translateY(-2px);
+  }
+
+  /* ── Sidebar ── */
+  .glass-sidebar {
+    background: var(--bg-sidebar);
+    border-right: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.18);
+  }
+
+  /* ── Glow accents (kept, just softened) ── */
+  .glow-emerald { box-shadow: 0 2px 12px rgba(16, 185, 129, 0.12); }
+  .glow-red     { box-shadow: 0 2px 12px rgba(239, 68, 68, 0.12); }
+  .glow-amber   { box-shadow: 0 2px 12px rgba(245, 158, 11, 0.12); }
+  .glow-blue    { box-shadow: 0 2px 12px rgba(79, 110, 247, 0.12); }
+
+  /* ── Buttons ── */
+  .btn-primary {
+    @apply px-5 py-2.5 rounded-xl font-semibold text-sm
+           transition-all duration-200 active:scale-[0.97]
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    background: linear-gradient(135deg, #4f6ef7 0%, #6a5ef5 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(79, 110, 247, 0.30);
+  }
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #3d5bf6 0%, #5a4ef4 100%);
+    box-shadow: 0 4px 16px rgba(79, 110, 247, 0.40);
+  }
+
+  .btn-secondary {
+    @apply px-5 py-2.5 rounded-xl font-semibold text-sm
+           transition-all duration-200 active:scale-[0.97];
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    color: var(--text-secondary);
+    box-shadow: 0 1px 3px rgba(15,20,40,0.06);
+  }
+  .btn-secondary:hover {
+    border-color: #c5cef8;
+    color: var(--accent);
+    box-shadow: 0 2px 8px rgba(79,110,247,0.10);
+  }
+
+  /* ── Inputs ── */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl text-sm
+           transition-all duration-200;
+    background: #f6f7fb;
+    border: 1.5px solid var(--border);
+    color: var(--text-primary);
+  }
+  .input-field::placeholder { color: var(--text-label); }
+  .input-field:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79,110,247,0.10);
+  }
+
+  /* ── Typography helpers ── */
+  .section-title    { @apply text-2xl font-bold mb-1; color: var(--text-primary); }
+  .section-subtitle { @apply text-sm; color: var(--text-secondary); }
+  .label-caps {
+    @apply text-[10px] font-semibold uppercase tracking-widest;
+    color: var(--text-label);
+  }
+}
+
+/* ── Gradient text ─────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #4f6ef7 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-fire {
+  background: linear-gradient(135deg, #ef4444 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Recharts tooltips ─────────────────── */
+.recharts-default-tooltip {
+  background: #ffffff !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 24px rgba(15,20,40,0.12) !important;
+}
+.recharts-tooltip-label  { color: var(--text-primary) !important; font-weight: 600 !important; }
+.recharts-tooltip-item   { color: var(--text-secondary) !important; }
+
+/* ── Loading shimmer ───────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f2f5 25%, #e4e8ef 50%, #f0f2f5 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+/* ── Probability gauge bar ─────────────── */
+.gauge-track {
+  background: linear-gradient(90deg, #10b981 0%, #f59e0b 50%, #ef4444 100%);
+  border-radius: 999px;
+  height: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Fade / slide animations ───────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in  { animation: fadeIn  0.35s ease both; }
+.animate-slide-up { animation: slideUp 0.45s ease both; }

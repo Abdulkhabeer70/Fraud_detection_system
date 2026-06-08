@@ -1,0 +1,598 @@
+{
+  "isolation_forest": {
+    "method": "Isolation Forest",
+    "best_contamination": 0.02,
+    "best_f1_score": 0.9081,
+    "results_per_contamination": [
+      {
+        "contamination": 0.001,
+        "fit_time_seconds": 0.77,
+        "f1_score": 0.1111,
+        "precision": 1.0,
+        "recall": 0.0588,
+        "true_positives": 5,
+        "false_positives": 0,
+        "true_negatives": 4915,
+        "false_negatives": 80,
+        "anomalies_detected": 5,
+        "actual_frauds": 85
+      },
+      {
+        "contamination": 0.002,
+        "fit_time_seconds": 0.76,
+        "f1_score": 0.2105,
+        "precision": 1.0,
+        "recall": 0.1176,
+        "true_positives": 10,
+        "false_positives": 0,
+        "true_negatives": 4915,
+        "false_negatives": 75,
+        "anomalies_detected": 10,
+        "actual_frauds": 85
+      },
+      {
+        "contamination": 0.005,
+        "fit_time_seconds": 0.76,
+        "f1_score": 0.4545,
+        "precision": 1.0,
+        "recall": 0.2941,
+        "true_positives": 25,
+        "false_positives": 0,
+        "true_negatives": 4915,
+        "false_negatives": 60,
+        "anomalies_detected": 25,
+        "actual_frauds": 85
+      },
+      {
+        "contamination": 0.01,
+        "fit_time_seconds": 0.74,
+        "f1_score": 0.7407,
+        "precision": 1.0,
+        "recall": 0.5882,
+        "true_positives": 50,
+        "false_positives": 0,
+        "true_negatives": 4915,
+        "false_negatives": 35,
+        "anomalies_detected": 50,
+        "actual_frauds": 85
+      },
+      {
+        "contamination": 0.02,
+        "fit_time_seconds": 0.77,
+        "f1_score": 0.9081,
+        "precision": 0.84,
+        "recall": 0.9882,
+        "true_positives": 84,
+        "false_positives": 16,
+        "true_negatives": 4899,
+        "false_negatives": 1,
+        "anomalies_detected": 100,
+        "actual_frauds": 85
+      },
+      {
+        "contamination": 0.05,
+        "fit_time_seconds": 0.71,
+        "f1_score": 0.5075,
+        "precision": 0.34,
+        "recall": 1.0,
+        "true_positives": 85,
+        "false_positives": 165,
+        "true_negatives": 4750,
+        "false_negatives": 0,
+        "anomalies_detected": 250,
+        "actual_frauds": 85
+      },
+      {
+        "contamination": 0.1,
+        "fit_time_seconds": 0.69,
+        "f1_score": 0.2906,
+        "precision": 0.17,
+        "recall": 1.0,
+        "true_positives": 85,
+        "false_positives": 415,
+        "true_negatives": 4500,
+        "false_negatives": 0,
+        "anomalies_detected": 500,
+        "actual_frauds": 85
+      }
+    ],
+    "figure": "D:\\data_mining_project\\ml\\figures\\isolation_forest_analysis.png"
+  },
+  "lof": {
+    "method": "Local Outlier Factor",
+    "best_n_neighbors": 50,
+    "best_f1_score": 0.9529,
+    "true_contamination_ratio": 0.017,
+    "results_per_n_neighbors": [
+      {
+        "n_neighbors": 5,
+        "fit_time_seconds": 0.12,
+        "f1_score": 0.6588,
+        "precision": 0.6588,
+        "recall": 0.6588,
+        "true_positives": 56,
+        "false_positives": 29,
+        "true_negatives": 4886,
+        "false_negatives": 29,
+        "anomalies_detected": 85
+      },
+      {
+        "n_neighbors": 10,
+        "fit_time_seconds": 0.1,
+        "f1_score": 0.7529,
+        "precision": 0.7529,
+        "recall": 0.7529,
+        "true_positives": 64,
+        "false_positives": 21,
+        "true_negatives": 4894,
+        "false_negatives": 21,
+        "anomalies_detected": 85
+      },
+      {
+        "n_neighbors": 20,
+        "fit_time_seconds": 0.12,
+        "f1_score": 0.8706,
+        "precision": 0.8706,
+        "recall": 0.8706,
+        "true_positives": 74,
+        "false_positives": 11,
+        "true_negatives": 4904,
+        "false_negatives": 11,
+        "anomalies_detected": 85
+      },
+      {
+        "n_neighbors": 30,
+        "fit_time_seconds": 0.13,
+        "f1_score": 0.9176,
+        "precision": 0.9176,
+        "recall": 0.9176,
+        "true_positives": 78,
+        "false_positives": 7,
+        "true_negatives": 4908,
+        "false_negatives": 7,
+        "anomalies_detected": 85
+      },
+      {
+        "n_neighbors": 50,
+        "fit_time_seconds": 0.17,
+        "f1_score": 0.9529,
+        "precision": 0.9529,
+        "recall": 0.9529,
+        "true_positives": 81,
+        "false_positives": 4,
+        "true_negatives": 4911,
+        "false_negatives": 4,
+        "anomalies_detected": 85
+      }
+    ],
+    "figure": "D:\\data_mining_project\\ml\\figures\\lof_analysis.png"
+  },
+  "kmeans": {
+    "method": "K-Means Clustering",
+    "best_k": 2,
+    "results_per_k": [
+      {
+        "k": 2,
+        "silhouette_score": 0.0315,
+        "calinski_harabasz_score": 146.72,
+        "davies_bouldin_score": 5.629,
+        "inertia": 148455.23,
+        "fit_time_seconds": 0.15,
+        "cluster_fraud_distribution": [
+          {
+            "cluster_id": 0,
+            "size": 1940,
+            "fraud_count": 85,
+            "fraud_rate_pct": 4.3814
+          },
+          {
+            "cluster_id": 1,
+            "size": 3060,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      },
+      {
+        "k": 3,
+        "silhouette_score": 0.0204,
+        "calinski_harabasz_score": 125.61,
+        "davies_bouldin_score": 5.3431,
+        "inertia": 145498.41,
+        "fit_time_seconds": 0.16,
+        "cluster_fraud_distribution": [
+          {
+            "cluster_id": 0,
+            "size": 952,
+            "fraud_count": 85,
+            "fraud_rate_pct": 8.9286
+          },
+          {
+            "cluster_id": 1,
+            "size": 1993,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          },
+          {
+            "cluster_id": 2,
+            "size": 2055,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      },
+      {
+        "k": 4,
+        "silhouette_score": 0.0226,
+        "calinski_harabasz_score": 119.55,
+        "davies_bouldin_score": 4.533,
+        "inertia": 142577.47,
+        "fit_time_seconds": 0.23,
+        "cluster_fraud_distribution": [
+          {
+            "cluster_id": 0,
+            "size": 1690,
+            "fraud_count": 2,
+            "fraud_rate_pct": 0.1183
+          },
+          {
+            "cluster_id": 1,
+            "size": 84,
+            "fraud_count": 83,
+            "fraud_rate_pct": 98.8095
+          },
+          {
+            "cluster_id": 2,
+            "size": 1721,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          },
+          {
+            "cluster_id": 3,
+            "size": 1505,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      }
+    ],
+    "pca_variance_explained": 0.0988,
+    "samples_used": 5000,
+    "figures": [
+      "D:\\data_mining_project\\ml\\figures\\kmeans_analysis.png",
+      "D:\\data_mining_project\\ml\\figures\\kmeans_elbow.png"
+    ]
+  },
+  "dbscan": {
+    "method": "DBSCAN Clustering",
+    "best_epsilon": 5.419,
+    "best_fraud_capture_pct": 100.0,
+    "min_samples": 5,
+    "results_per_epsilon": [
+      {
+        "epsilon": 5.419,
+        "min_samples": 5,
+        "n_clusters": 1,
+        "n_noise_points": 291,
+        "noise_percentage": 5.82,
+        "fraud_in_noise": 85,
+        "fraud_capture_rate_pct": 100.0,
+        "silhouette_score": null,
+        "fit_time_seconds": 0.1,
+        "cluster_details": [
+          {
+            "cluster_id": -1,
+            "label": "noise",
+            "size": 291,
+            "fraud_count": 85,
+            "fraud_rate_pct": 29.2096
+          },
+          {
+            "cluster_id": 0,
+            "label": "cluster_0",
+            "size": 4709,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      },
+      {
+        "epsilon": 5.555,
+        "min_samples": 5,
+        "n_clusters": 1,
+        "n_noise_points": 209,
+        "noise_percentage": 4.18,
+        "fraud_in_noise": 85,
+        "fraud_capture_rate_pct": 100.0,
+        "silhouette_score": null,
+        "fit_time_seconds": 0.11,
+        "cluster_details": [
+          {
+            "cluster_id": -1,
+            "label": "noise",
+            "size": 209,
+            "fraud_count": 85,
+            "fraud_rate_pct": 40.6699
+          },
+          {
+            "cluster_id": 0,
+            "label": "cluster_0",
+            "size": 4791,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      },
+      {
+        "epsilon": 5.823,
+        "min_samples": 5,
+        "n_clusters": 1,
+        "n_noise_points": 122,
+        "noise_percentage": 2.44,
+        "fraud_in_noise": 85,
+        "fraud_capture_rate_pct": 100.0,
+        "silhouette_score": null,
+        "fit_time_seconds": 0.14,
+        "cluster_details": [
+          {
+            "cluster_id": -1,
+            "label": "noise",
+            "size": 122,
+            "fraud_count": 85,
+            "fraud_rate_pct": 69.6721
+          },
+          {
+            "cluster_id": 0,
+            "label": "cluster_0",
+            "size": 4878,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      },
+      {
+        "epsilon": 6.026,
+        "min_samples": 5,
+        "n_clusters": 1,
+        "n_noise_points": 95,
+        "noise_percentage": 1.9,
+        "fraud_in_noise": 85,
+        "fraud_capture_rate_pct": 100.0,
+        "silhouette_score": null,
+        "fit_time_seconds": 0.18,
+        "cluster_details": [
+          {
+            "cluster_id": -1,
+            "label": "noise",
+            "size": 95,
+            "fraud_count": 85,
+            "fraud_rate_pct": 89.4737
+          },
+          {
+            "cluster_id": 0,
+            "label": "cluster_0",
+            "size": 4905,
+            "fraud_count": 0,
+            "fraud_rate_pct": 0.0
+          }
+        ]
+      }
+    ],
+    "samples_used": 5000,
+    "figures": [
+      "D:\\data_mining_project\\ml\\figures\\dbscan_kdistance.png",
+      "D:\\data_mining_project\\ml\\figures\\dbscan_analysis.png"
+    ]
+  },
+  "pattern_analysis": {
+    "method": "Transaction Pattern Analysis",
+    "amount_patterns": {
+      "legitimate": {
+        "mean": 0.2637,
+        "median": -0.0021,
+        "std": 0.8959,
+        "min": -0.6354,
+        "max": 7.02,
+        "q25": -0.3765,
+        "q75": 0.6187,
+        "q95": 2.0713,
+        "q99": 3.6275
+      },
+      "fraud": {
+        "mean": 0.4492,
+        "median": 0.1526,
+        "std": 1.3453,
+        "min": -0.6331,
+        "max": 8.7186,
+        "q25": -0.3553,
+        "q75": 0.7898,
+        "q95": 2.1935,
+        "q99": 5.3757
+      }
+    },
+    "temporal_patterns": {
+      "legitimate_time_mean": -0.0075,
+      "legitimate_time_std": 0.5747,
+      "fraud_time_mean": 0.0631,
+      "fraud_time_std": 0.5575,
+      "time_quartile_fraud_distribution": {
+        "Q1": {
+          "total": 1250,
+          "fraud_count": 17,
+          "fraud_rate_pct": 1.36
+        },
+        "Q2": {
+          "total": 1250,
+          "fraud_count": 20,
+          "fraud_rate_pct": 1.6
+        },
+        "Q3": {
+          "total": 1250,
+          "fraud_count": 24,
+          "fraud_rate_pct": 1.92
+        },
+        "Q4": {
+          "total": 1250,
+          "fraud_count": 24,
+          "fraud_rate_pct": 1.92
+        }
+      }
+    },
+    "feature_correlations": {
+      "top_positive_correlations": {
+        "V12": 0.2519,
+        "V23": 0.2367,
+        "V6": 0.2275,
+        "V8": 0.2254,
+        "V22": 0.1937
+      },
+      "top_negative_correlations": {
+        "V14": -0.3346,
+        "V20": -0.2027,
+        "V17": -0.1936,
+        "V10": -0.1902,
+        "V1": -0.1902
+      }
+    },
+    "feature_divergence_ks": {
+      "V14": {
+        "ks_statistic": 0.7975,
+        "p_value": 0.0
+      },
+      "V12": {
+        "ks_statistic": 0.684,
+        "p_value": 0.0
+      },
+      "V23": {
+        "ks_statistic": 0.5962,
+        "p_value": 0.0
+      },
+      "V8": {
+        "ks_statistic": 0.5877,
+        "p_value": 0.0
+      },
+      "V20": {
+        "ks_statistic": 0.5625,
+        "p_value": 0.0
+      },
+      "V6": {
+        "ks_statistic": 0.5431,
+        "p_value": 0.0
+      },
+      "V17": {
+        "ks_statistic": 0.5391,
+        "p_value": 0.0
+      },
+      "V22": {
+        "ks_statistic": 0.5347,
+        "p_value": 0.0
+      },
+      "V21": {
+        "ks_statistic": 0.5272,
+        "p_value": 0.0
+      },
+      "V13": {
+        "ks_statistic": 0.5249,
+        "p_value": 0.0
+      },
+      "V7": {
+        "ks_statistic": 0.4954,
+        "p_value": 0.0
+      },
+      "V10": {
+        "ks_statistic": 0.4935,
+        "p_value": 0.0
+      },
+      "V15": {
+        "ks_statistic": 0.4751,
+        "p_value": 0.0
+      },
+      "V1": {
+        "ks_statistic": 0.4494,
+        "p_value": 0.0
+      },
+      "V25": {
+        "ks_statistic": 0.4362,
+        "p_value": 0.0
+      }
+    },
+    "extreme_value_patterns": {
+      "V1": {
+        "q01_threshold": -2.4858,
+        "q99_threshold": 2.3434,
+        "extreme_high_fraud_rate_pct": 0.0,
+        "extreme_low_fraud_rate_pct": 46.0
+      },
+      "V2": {
+        "q01_threshold": -2.3848,
+        "q99_threshold": 2.5677,
+        "extreme_high_fraud_rate_pct": 30.0,
+        "extreme_low_fraud_rate_pct": 2.0
+      },
+      "V3": {
+        "q01_threshold": -2.3675,
+        "q99_threshold": 2.3182,
+        "extreme_high_fraud_rate_pct": 36.0,
+        "extreme_low_fraud_rate_pct": 2.0
+      },
+      "V4": {
+        "q01_threshold": -2.3532,
+        "q99_threshold": 2.3078,
+        "extreme_high_fraud_rate_pct": 4.0,
+        "extreme_low_fraud_rate_pct": 14.0
+      },
+      "V14": {
+        "q01_threshold": -2.8587,
+        "q99_threshold": 2.3461,
+        "extreme_high_fraud_rate_pct": 0.0,
+        "extreme_low_fraud_rate_pct": 72.0
+      },
+      "V17": {
+        "q01_threshold": -2.4032,
+        "q99_threshold": 2.2551,
+        "extreme_high_fraud_rate_pct": 2.0,
+        "extreme_low_fraud_rate_pct": 44.0
+      },
+      "Amount": {
+        "q01_threshold": -0.6275,
+        "q99_threshold": 3.6506,
+        "extreme_high_fraud_rate_pct": 6.0,
+        "extreme_low_fraud_rate_pct": 2.0
+      }
+    },
+    "figure": "D:\\data_mining_project\\ml\\figures\\pattern_analysis.png"
+  },
+  "anomaly_comparison": {
+    "method": "Anomaly Detection Comparison",
+    "ranking": [
+      {
+        "method": "Local Outlier Factor",
+        "f1_score": 0.9529,
+        "precision": 0.9529,
+        "recall": 0.9529,
+        "true_positives": 81,
+        "false_positives": 4,
+        "best_param": "n_neighbors=50"
+      },
+      {
+        "method": "Isolation Forest",
+        "f1_score": 0.9081,
+        "precision": 0.84,
+        "recall": 0.9882,
+        "true_positives": 84,
+        "false_positives": 16,
+        "best_param": "contamination=0.02"
+      }
+    ],
+    "best_method": "Local Outlier Factor",
+    "best_f1": 0.9529,
+    "figure": "D:\\data_mining_project\\ml\\figures\\anomaly_comparison.png"
+  },
+  "pipeline_metadata": {
+    "total_runtime_seconds": 29.53,
+    "dataset_size": 5000,
+    "n_features": 30,
+    "fraud_count": 85,
+    "fraud_ratio": 0.017
+  }
+}

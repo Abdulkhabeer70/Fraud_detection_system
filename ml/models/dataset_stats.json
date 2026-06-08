@@ -1,0 +1,12 @@
+{
+  "total_transactions": 5000,
+  "legitimate_count": 4915,
+  "fraud_count": 85,
+  "fraud_percentage": 1.7,
+  "feature_count": 31,
+  "missing_values": 0,
+  "amount_mean": 88.18,
+  "amount_std": 88.49,
+  "amount_max": 914.1,
+  "time_span_hours": 47.99
+}
